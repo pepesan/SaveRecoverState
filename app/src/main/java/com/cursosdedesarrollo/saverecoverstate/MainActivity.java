@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
         state.putSerializable("starttime", startTime);
-        Log.d("app",""+startTime);
+        Log.d("app:",""+startTime);
     }
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         startTime = (Calendar) savedInstanceState.getSerializable("starttime");
-        Log.d("app",""+startTime);
+        Log.d("app:",""+startTime);
     }
 }
